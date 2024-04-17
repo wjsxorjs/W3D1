@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="loca">
+  <select id="all" resultType="test.LocaVO">
+    select *
+    from locations
+  </select>
+  
+  <!--  사용자가 입력한 값을 인자로 받아서 부서명을 검색하는 기능 -->
+  <select id="search_city" resultType="test.LocaVO" parameterType="java.lang.String">
+  	select *
+  	from locations
+  	where city LIKE CONCAT('%',#{str},'%')
+  </select>
+  
+</mapper>
