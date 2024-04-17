@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 교육생 정보를 저장하려 한다. (이름, 연락처, 거주지)-->
+
+<students>
+	<student>
+		<name>AAA</name>
+		<contact>010-1111-1111</contact>
+		<address>SUWON</address>
+	</student>
+	<student>
+		<name>BBB</name>
+		<contact>010-2222-2222</contact>
+		<address>SEOUL</address>
+	</student>
+	<student>
+		<name>CCC</name>
+		<contact>010-3333-3333</contact>
+		<address>INCHEON</address>
+	</student>
+</students>
+
+<!-- 
+	어떤 작업자는 <students>가 아니라 <total>로 작업을 할 수도 있다.
+	그럼 이런 오류를 없애기 위해 문서에 대한 규칙을 정해야한다.
+	그것이 바로 DTD(Document Type Definition)이다.
+ -->

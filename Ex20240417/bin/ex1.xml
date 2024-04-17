@@ -15,20 +15,12 @@
 	- 태그(Element) 이름은 숫자로 시작할 수 없고, 공백이 포함되어서는 안된다.
 	- 반드시 열었으면 닫아주어야한다. <test id="a">CONTENTS</test> 또는 <test id="a"/>
 	
+	
+	
  -->
  
 <main>
 	<product>제품1</product>
 	<product>제품2</product>
 	<product>제품3</product>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 </main> 

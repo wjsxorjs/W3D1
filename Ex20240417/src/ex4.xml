@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students [
+	<!ELEMENT students (student+)> <!-- *: 0 ~ (생략가능, 중복가능) || +: 1 ~ (생략불가, 중복가능)-->
+	<!ELEMENT student (name, tel+, addr?)> <!-- 해당 ','는 순서를 뜻한다. name > tel > addr이라는 뜻. -->
+									<!-- ?: 생략되거나 하나만 오거나. -->
+	<!ELEMENT name (#PCDATA)> <!-- 'P'arsing(해석)을 필요로 하는 문자열('C'haracter) 'DATA' -->
+	<!ELEMENT tel (#PCDATA)>
+	<!ELEMENT addr (#PCDATA)> 
+]>
+
+<students>
+	<student>
+		<name>AAA</name>
+		<tel>010-1111-1111</tel>
+		<addr>SUWON</addr>
+	</student>
+	<student>
+		<name>BBB</name>
+		<tel>010-2222-2222</tel>
+		<tel>222-2222</tel>
+		<addr>SEOUL</addr>
+	</student>
+	<student>
+		<name>CCC</name>
+		<tel>010-3333-3333</tel>
+		<tel>333-33-33333</tel>
+		<tel>333-3333</tel>
+	</student>
+</students>
+
+<!-- Well-formed 문서 그리고 규칙이 적용되었다면 Validation -->

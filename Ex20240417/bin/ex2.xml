@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<total>
+	<person>
+		<name>AAA</name>
+		<email>AAA@email.com</email>
+		<age>21</age>
+	</person>
+	<person>
+		<name>BBB</name>
+		<email>BBB@email.com</email>
+		<age>22</age>
+	</person>
+	
+</total>
