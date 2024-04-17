@@ -1,2 +1,34 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?> <!-- XML 선언부(첫번째 줄에는 항상 이 선언문이 있어야 한다)-->
 
+<!-- 주석문
+	XML (eXtensible Markup Language)
+	: 	Extenisble - 확장가능하다는 의미
+		결국 확장 가능한 markup 언어 (markup: 조판지시)
+				ㄴ [tag이름을 내 마음대로 할 수 있다.]
+	
+	- XML은 세계 표준이다. (w3.org)
+	- XML은 HTML을 대체하기 위해 나온 언어가 아니다.
+	
+	- XML의 구조에서 중요한 것은 첫 태그(root)가 오직 1개여야한다는 것이다.
+	
+	
+	- 태그(Element) 이름은 숫자로 시작할 수 없고, 공백이 포함되어서는 안된다.
+	- 반드시 열었으면 닫아주어야한다. <test id="a">CONTENTS</test> 또는 <test id="a"/>
+	
+ -->
+ 
+<main>
+	<product>제품1</product>
+	<product>제품2</product>
+	<product>제품3</product>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</main> 
