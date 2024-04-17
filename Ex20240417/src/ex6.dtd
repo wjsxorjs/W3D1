@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 외부 DTD 정의시 <!DOCTYPE> 선언은 하지 않는다. -->
+
+<!ELEMENT List (personal+)>
+<!ELEMENT personal (name, c_phone, email?)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT c_phone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+
+<!ATTLIST personal number CDATA #REQUIRED>
+
+<!ENTITY hb "hanbiteni">

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 외부 DTD 참조 -->
+<!DOCTYPE List SYSTEM "ex6.dtd"> <!-- 표준일 때는 PUBLIC. 아닐 때는 SYSTEM -->
+<List>
+	<personal number="111">
+		<name>AAA</name>
+		<c_phone>010-1111-1111</c_phone>
+		<email>AAA@email.com</email>
+	</personal>
+</List>
