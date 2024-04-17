@@ -3,6 +3,7 @@ package pm;
 
 import java.io.Reader;
 import java.util.List;
+import java.util.Scanner;
 
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -36,7 +37,27 @@ public class Main_Ex1 {
 			DeptVO vo = list.get(i);
 			System.out.printf("%2s | %-10s | %s\r\n",vo.getDeptno(),vo.getDname(),vo.getLoc_code());
 		}
-			System.out.printf("%d개 부서\r\n",list.size());
+			System.out.printf("%d개 부서\r\n\r\n",list.size());
+			
+			
+			System.out.println("----------- 부서명 검색 -----------");
+			
+			Scanner scan = new Scanner(System.in);
+			System.out.print("부서명 입력: ");
+			String dname = scan.nextLine().toUpperCase();
+			System.out.printf("=======[검색어: %s]=======\r\n",dname);
+			
+			List<DeptVO> list2 = ss.selectList("dept.search_name", dname);
+			
+			for(int i=0; i<list2.size();i++) {
+				//리스트에 저장된 VO객체를 하나씩 얻어낸다.
+				DeptVO vo = list2.get(i);
+				System.out.printf("%2s | %-10s | %s\r\n",vo.getDeptno(),vo.getDname(),vo.getLoc_code());
+			}
+			
+			
+			
+			
 			ss.close();
 	}
 
