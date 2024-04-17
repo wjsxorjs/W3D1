@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="emp"> <!-- namespace를 활용하여 id가 충돌하지 않도록한다. -->
+
+  <select id="all" resultType="am.EmpVO"> <!-- Generic 타입이 EmpVO인 ArrayList로 반환해준다. -->
+    select * from emp
+  </select>
+  
+</mapper>
